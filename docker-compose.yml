@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  couponservice:
+    build:
+      context: ./couponservice
+      dockerfile: Dockerfile
+    container_name: couponservice
+    ports:
+      - "8080:8080"
+    networks:
+      - microservices-network
+    restart: unless-stopped
+
+  productservice:
+    build:
+      context: ./productservice
+      dockerfile: Dockerfile
+    container_name: productservice
+    ports:
+      - "8081:8080"
+    networks:
+      - microservices-network
+    restart: unless-stopped
+
+networks:
+  microservices-network:
+    driver: bridge
