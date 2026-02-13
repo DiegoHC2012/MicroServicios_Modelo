@@ -31,6 +31,8 @@ echo "==========================================="
 echo "✅ Compilación exitosa"
 echo "==========================================="
 
+cd infra
+
 # Ejecutar docker-compose
 echo ""
 echo "🐳 Iniciando contenedores con Docker Compose..."

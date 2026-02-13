@@ -36,6 +36,7 @@ test_endpoint() {
 # Probar endpoints
 test_endpoint "Coupon Service" "http://localhost:8080/hello-world"
 test_endpoint "Product Service" "http://localhost:8081/hello-world"
+test_endpoint "Coupon get" "http://localhost:8080/coupon/getCoupon/HOLIDAY10"
 
 echo "=========================================="
 echo "Testing Complete"

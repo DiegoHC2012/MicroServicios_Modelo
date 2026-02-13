@@ -13,4 +13,6 @@ Por lo que no es necesario hacer docker-compose up con el puro sh basta.
 
 Esto reinicia los contenedores no sin antes compilar los servicios.
 
+> wget -qO- couponservice:8080/coupon/getCoupon/hola
+
 - DiegoHC

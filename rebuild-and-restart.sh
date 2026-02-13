@@ -31,6 +31,8 @@ echo "==========================================="
 echo "✅ Recompilación exitosa"
 echo "==========================================="
 
+cd infra
+
 # Detener contenedores existentes
 echo ""
 echo "🛑 Deteniendo contenedores..."
